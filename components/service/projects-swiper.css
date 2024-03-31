@@ -1,0 +1,92 @@
+.serviceCard {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 6.25rem 0;
+  background-color: #F5F5F5;
+}
+@media screen and (max-width: 991.98px) {
+  .serviceCard {
+    padding: 3.125rem 0;
+  }
+}
+.serviceCard h2 {
+  font-size: 3.125rem;
+  line-height: 4.25rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 991.98px) {
+  .serviceCard h2 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+  }
+}
+.serviceCard .serviceCard-wrapper {
+  overflow: hidden;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.serviceCard .serviceCard-wrapper .wrap-img {
+  width: 100%;
+  height: 125px;
+  overflow: hidden;
+}
+.serviceCard .serviceCard-wrapper .wrap-img figure {
+  width: 100%;
+  height: 100%;
+}
+.serviceCard .serviceCard-wrapper .wrap-img figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.serviceCard .serviceCard-wrapper .wrap-cont {
+  padding: 25px 30px 30px;
+  background-color: #fff;
+  position: relative;
+}
+.serviceCard .serviceCard-wrapper .wrap-cont::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.serviceCard .serviceCard-wrapper .wrap-cont h3 {
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  color: #000;
+  font-weight: 500;
+}
+.serviceCard .serviceCard-wrapper .wrap-cont p {
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.875rem;
+}
+.serviceCard .serviceCard-wrapper .wrap-cont .view a.viewBtn:hover {
+  color: #000;
+}
+.serviceCard .serviceCard-wrapper:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.serviceCard .serviceCard-wrapper:hover .wrap-cont::after {
+  width: 100%;
+}
+.serviceCard .serviceCard-wrapper:hover a.viewBtn {
+  color: #000;
+}
+.serviceCard .serviceCard-wrapper:hover a.viewBtn::after {
+  right: -4px;
+  background-image: url("../../assets/images/arrow-right-black.svg");
+}

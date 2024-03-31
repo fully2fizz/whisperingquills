@@ -1,0 +1,211 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+.awards {
+  padding: size(190) 0 size(108);
+
+  @include max(1199.98) {
+    padding: size(35) 0 size(45);
+  }
+
+  @include max(991.98) {
+    padding: size(38) 0 size(45);
+  }
+
+  &-title-wrap {
+    margin-bottom: size(72);
+
+    @include max(1199.98) {
+     margin-bottom: size(32);
+    }
+  }
+
+  .swiper {
+    @include max(991.98) {
+      overflow: visible;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-color: $page-bg;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        z-index: 5;
+        width: 100vw;
+        height: 100%;
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    @include max(991.98) {
+      margin-bottom: size(40);
+    
+    }
+  }
+
+  // swiper-scrollbar
+
+  .swiper-scrollbar {
+    background: rgba(166, 166, 166, 0.50); 
+    height: size(1);
+    width: 100%;
+    position: static;
+    cursor: pointer;
+  }
+
+  .swiper-scrollbar-drag {
+    height: size(2);
+    background-color: $white;
+    translate: 0 -2px;
+
+    &:hover,
+    &:active {
+      height: 4px;
+      translate: 0 -4px;
+      cursor: grab;
+    }
+
+    
+  }
+
+  .swiper-navigation {
+    gap: size(42);
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  &-button-next,
+  &-button-prev {
+    position: static;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin-top: 0;
+    
+
+    &::after {
+      content: none;
+    }
+
+    svg {
+      width: size(27);
+      height: size(22);
+      transition: all ease-out 0.3s;
+    }
+  }
+
+  .swiper-button-next {
+    @include min(992) {
+      &:hover {
+        svg {
+          transform: translateX(size(3));
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    @include min(992) {
+      &:hover {
+        svg {
+          transform: translateX(- size(3));
+        }
+      }
+    }
+  }
+
+
+  &-card {
+    background-color: $grey;
+    height: 100%;
+    padding: size(48);
+
+    display: flex;
+    flex-direction: column;
+
+    @include max(1419.98) {
+      padding: size(35);
+    }
+
+    @include max(991.98) {
+      background-color: $grey-3;
+      padding: size(32);
+    }
+
+    &-header {
+      margin-bottom: size(94);
+
+      @include max(991.98) {
+        margin-bottom: size(56);
+      }
+
+      .year {
+        color: $text-light;
+        font-size: size(20);
+        font-weight: 500;
+        line-height: 1.6;
+        margin-bottom: size(16);
+
+        @include max(991.98) {
+          font-size: size(18);
+        }
+  
+
+      }
+
+      .title {
+        color: $white;
+        font-size: size(28);
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: - size(.84);
+
+        @include max(991.98) {
+          font-size: size(20);
+          letter-spacing: unset;
+        }
+  
+      }
+    }
+
+    &-footer {
+      margin-top: auto;
+
+      .icon-wrap {
+        width: size(83);
+        height: size(83);
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: $white;
+        margin-bottom: size(29);
+
+        img {
+          width: size(50);
+          height: size(50);
+          object-fit: contain;
+
+          @include max(991.98) {
+            width: size(43);
+            height: size(43);
+          }
+    
+        }
+
+        @include max(991.98) {
+          width: size(72);
+          height: size(72);
+        }
+  
+      }
+
+      
+    }
+  }
+
+}

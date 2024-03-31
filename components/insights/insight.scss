@@ -1,0 +1,147 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+.insight {
+  padding: size(100) 0 ;
+  background-color: #F5F5F5;
+  @include max(1199.98) {
+    padding: size(50) 0 ;
+  }
+
+  &-title-wrap {
+    margin-bottom: size(72);
+
+    @include max(1199.98) {
+      margin-bottom: size(32);
+    }
+    h2 {
+      color: #000;
+    }
+  }
+
+  .swiper {
+    @include max(991.98) {
+      overflow: visible;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-color: $black;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        z-index: 5;
+        width: 100vw;
+        height: 100%;
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    @include max(991.98) {
+      margin-bottom: size(32);  
+    }
+  }
+
+  .swiper-navigation {
+    gap: size(42);
+  }
+
+
+  // swiper-scrollbar
+
+  .swiper-scrollbar {
+    background: rgba(166, 166, 166, 0.50); 
+    height: size(1);
+    width: 100%;
+    position: static;
+    cursor: pointer;
+  }
+
+  .swiper-scrollbar-drag {
+    height: size(2);
+    background-color: $white;
+    translate: 0 -2px;
+
+    &:hover,
+    &:active {
+      height: 4px;
+      translate: 0 -4px;
+      cursor: grab;
+    }
+
+    
+  }
+
+
+  &-card {
+    &-header {
+      width: 100%;
+
+      figure {
+        height: 210px;
+        overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transition: all ease-in-out 0.4s;
+        }
+      }
+    }
+
+    &-footer {
+      background-color: $white;
+      padding: size(20);
+
+      @include max(991.98) {
+        padding-top: size(10);
+      }
+      .name {
+        margin-bottom: size(12);
+        color: $black;
+        transition: all ease-in-out 0.4s;
+
+        @include max(991.98) {
+          margin-bottom: size(8);
+        }
+      }
+      a {
+        color: $text-light;
+        position: relative;
+        padding-right: 28px;
+        transition: all ease-in-out 0.4s;
+        &::after {
+          content: "";
+          width: 18px;
+          height: 11.56px;
+          background-image: url("../../assets/images/arrow-right.svg");
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          transition: all ease-in-out 0.4s;
+        }
+      }
+    }
+    &:hover {
+      .name {
+        color: $primary-color;
+      }
+      img {
+        transform: scale(1.1);
+      }
+      a {
+        color: $black;
+      }
+        a::after {
+        right: -4px;
+        background-image: url("../../assets/images/arrow-right-black.svg");
+      }
+    }
+  }
+
+
+}

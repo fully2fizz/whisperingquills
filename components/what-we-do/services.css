@@ -1,0 +1,72 @@
+.services {
+  height: 100svh;
+  padding: 6.25rem 0;
+  background-color: #000;
+}
+@media screen and (max-width: 1199.98px) {
+  .services {
+    padding: 3.125rem 0;
+  }
+}
+.services .service-wrap {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.services .service-wrap::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-image: url(../../assets/images/design-gif.gif);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.services .service-wrap h2 {
+  font-size: 8.125rem;
+  line-height: 9.375rem;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+@media screen and (max-width: 991px) {
+  .services .service-wrap h2 {
+    font-size: 5rem;
+    line-height: 6.25rem;
+    margin-bottom: 20px;
+  }
+}
+.services .service-wrap p {
+  margin-bottom: 30px;
+  color: #fff;
+}
+.services .service-wrap a {
+  color: #A6A6A6;
+  position: relative;
+  padding-right: 28px;
+  text-decoration: none;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+.services .service-wrap a::after {
+  content: "";
+  width: 18px;
+  height: 13.56px;
+  background-image: url("../../assets/images/arrow-right.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+.services .service-wrap a:hover {
+  color: #fff;
+}
+.services .service-wrap a:hover::after {
+  right: -4px;
+  background-image: url("../../assets/images/arrow-right.svg");
+}

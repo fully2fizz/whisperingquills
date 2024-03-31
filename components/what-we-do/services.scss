@@ -1,0 +1,69 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+.services {
+  height: 100svh;
+  padding: size(100) 0;
+  background-color: #000;
+  
+  @include max(1199.98) {
+    padding: size(50) 0;
+  }
+  .service-wrap {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    &::after {
+      content: '';
+      width: 150px;
+      height: 150px;
+      background-image: url(../../assets/images/design-gif.gif);
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    h2 {
+      font-size: size(130);
+      line-height: size(150);
+      margin-bottom: 30px;
+      color: #fff;
+      font-weight: 300;
+      @include max(991) {
+        font-size: size(80);
+        line-height: size(100);
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      margin-bottom: 30px;
+      color: #fff;
+    }
+    a {
+      color: $text-light;
+      position: relative;
+      padding-right: 28px;
+      text-decoration: none;
+      transition: all ease-in-out 0.4s;
+      &::after {
+        content: "";
+        width: 18px;
+        height: 13.56px;
+        background-image: url("../../assets/images/arrow-right.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        transition: all ease-in-out 0.4s;
+      }
+      &:hover {
+        color: #fff;
+        &::after {
+          right: -4px;
+          background-image: url("../../assets/images/arrow-right.svg");
+        }
+      }
+  }
+  }
+}

@@ -1,0 +1,72 @@
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+.abt-banner {
+    width: 100%;
+    height: 100%;
+    padding: size(180) 0 0;
+    background-color: #000;
+
+    @include max(991) {
+        padding: size(60) 0;
+    }
+
+    .abt-row {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 100px;
+        .abt-wrap {
+            width: 100%;
+            max-width: 10%;
+        }
+        .abt-wrap-cont {
+            width: 100%;
+            max-width: 55%;
+        }
+    }
+
+    .text-head {
+        .desc {
+            color: $white;
+            font-size: size(20);
+            font-weight: 300;
+            line-height: 1.5;
+            letter-spacing:  size(.4);
+    
+            @include max(1199.98) {
+              font-size: size(18);
+              margin-bottom: size(24);
+              letter-spacing:  size(.36);
+            }
+          }
+    }
+
+    .text-cont {
+        p {
+            font-size: size(16);
+            line-height: size(30);
+            color: #fff;
+        }
+    }
+
+    .abt-bg-wrapper {
+        width: 100%;
+        max-width: 80%;
+        height: 90svh;
+        margin: 80px auto 0;
+        position: relative;
+        .bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img {
+              object-fit: cover;
+              height: 100%;
+              width: 100%;
+            }
+        }
+    }
+}

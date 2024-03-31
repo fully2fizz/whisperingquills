@@ -1,0 +1,243 @@
+
+@import '../common/utilities/variable';
+@import '../common/mixins/mixins';
+
+
+/*===================
+	Start Header CSS 
+=====================*/
+.header{
+	background-color:#000000;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.header .navbar-collapse{
+	padding:0;
+}
+/* Topbar */
+.header .topbar{
+    padding:5px 0;
+    background-color:#000000;
+    border-bottom:1px solid #1E1E1E;
+    @include max(991) {
+        display: none;
+    }
+
+}
+.header .topbar .header-top-row {
+    @include min(991) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    display: none;
+}
+
+.header .top-link {
+    margin: 0;
+    padding-left: 0 !important;
+}
+.header .top-link li{
+	display:inline-block;
+	margin-right:15px;
+}
+.header .top-link li:last-child{
+	margin-right:0px;
+}
+.header .top-link li a{
+	color:#ffffff;
+	font-size:14px;
+	font-weight:400;
+    text-decoration: none;
+}
+.header .top-link li:hover a{
+	color:#FCBF10;
+}
+.header .top-contact{
+	margin-bottom: 0;
+}
+.header .top-contact li{
+	display:inline-block;
+	margin-right:25px;
+	color:#ffffff;
+}
+.header .top-contact li:last-child{
+	margin-right:0;
+}
+.header .top-contact li a{
+	font-size:14px;
+}
+.header .top-contact li a:hover{
+	color:#FCBF10;
+}
+.header .header-inner {
+	background:#000000;
+	z-index:999;
+	width:100%;
+}
+.get-quote{
+	margin-top:10px;
+}
+.get-quote .btn{
+	color:#fff;
+}
+.header .logo {
+    max-width: 220px;
+    margin-top: 9px;
+}
+.header .navbar {
+	background: none;
+	box-shadow: none;
+	border: none;
+	margin: 0;
+	height: 0px;
+	min-height: 0px;
+}
+.header .nav li{
+	margin-right: 15px;
+    float: left;
+	position:relative;
+}
+.header .nav li:last-child{
+	margin:0;
+}
+.header .nav li a {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding: 25px 12px;
+	position: relative;
+	display: inline-block;
+    text-decoration: none;
+	position:relative;
+}
+.header .nav li a.menudown {
+	position: relative;
+	&::after {
+		content: '';
+		width: 8px;
+		height: 13px;
+		background-image: url(../../assets/images/dropdown.svg);
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 29px;
+		right: 0;
+		background-size: cover;
+		transform: rotate(90deg);
+	}
+}
+.header .nav li a::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width:0%;
+	background: #FCBF10;
+	border-radius: 5px 5px 0 0;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.header .nav li.active a:before{
+	opacity:1;
+	visibility:visible;
+	width: 100%;
+}
+.header .nav li.active a{
+	color:#FCBF10;
+}
+.header .nav li:hover a:before{
+	opacity:1;
+	width: 100%;
+	visibility:visible;
+}
+.header .nav li:hover a{
+	color:#FCBF10;
+}
+
+
+/* Dropdown Menu */
+.header .nav li .dropdown {
+	background: #fff;
+	width: 220px;
+	position: absolute;
+	left:-20px;
+	top: 100%;
+	z-index: 999;
+	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 3px 5px #3333334d;
+	transform-origin: 0 0 0;
+	transform: scaleY(0.2);
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	opacity: 0;
+	visibility: hidden;
+	top: 74px;
+	border-left:3px solid #FCBF10;
+	display: flex;
+  	flex-direction: column;
+}
+.header .nav li:hover .dropdown{
+	opacity:1;
+	visibility:visible;
+	transform:translateY(0px);
+	padding-left: 0;
+}
+.header .nav li .dropdown li{
+	margin:0;
+	border-bottom:1px dashed #eee;
+	list-style: none;
+}
+.header .nav li .dropdown li:last-child{
+	border:none;
+}
+.header .nav li .dropdown li a {
+	padding: 12px 15px;
+	color: #666;
+	display: block;
+	font-weight: 400;
+	text-transform: capitalize;
+	background: transparent;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+}
+.header .nav li .dropdown li a:before{
+	display:none;
+}
+.header .nav li .dropdown li:last-child a{
+	border-bottom:0px;
+}
+.header .nav li .dropdown li:hover a{
+	color:#FCBF10;
+}
+.header .nav li .dropdown li a:hover{
+	border-color:transparent;
+}
+/* Header Sticky */
+.header.sticky .header-inner{
+	position:fixed;
+	z-index:999;
+	top:0;
+	left:0;
+	bottom:initial;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	animation: fadeInDown 0.5s both 0.1s;
+	box-shadow:0px 0px 13px #00000054;
+    @keyframes fadeInDown{0%{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}
+}
+/*=========================
+	End Header CSS
+===========================*/
