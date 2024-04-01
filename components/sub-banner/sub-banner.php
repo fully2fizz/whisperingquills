@@ -4,9 +4,9 @@
   </div>
   <div class="text-wrapper">
     <div class="container">
-      <h1 class="desc">About Us</h1>
+      <h1 class="desc">Services</h1>
       <h2 class="ttl-50">
-        Explore Our Specialty About Us
+        Explore Our Specialty Services
       </h2>
       <span class="desc d-block">Spaces filled with pure love</span>
     </div>

@@ -70,3 +70,83 @@
         }
     }
 }
+
+
+// story design
+.our-story {
+    padding: size(100) 0;
+    background-color: #fff;
+    @include max(991) {
+        padding: size(50) 0;
+    }
+    .story-head {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto 60px auto;
+        @include max(991) {
+            margin: 0 auto 30px auto;
+        }
+        h2 {
+            font-size: size(50);
+            line-height: size(68);
+            font-weight: 400;
+            color: #000;
+            margin-bottom: 30px;
+            text-align: center;
+            @include max(991.98) {
+              font-size: size(28);
+              line-height: size(40);
+              margin-bottom: 20px;
+            }
+        }
+        p {
+            font-size: size(16);
+            text-align: center;
+        }
+    }
+    .storyCard-wrapper {
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+        .wrap-img {
+          width: 100%;
+          height: 80px;
+          overflow: hidden;
+          figure {
+            width: 100%;
+            height: 100%;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all ease-in-out 0.3s;
+            }
+          }
+        }
+        .story-content {
+          padding: 30px 0px;
+          background-color: #fff;
+          position: relative;
+          &::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: all ease-in-out 0.3s;
+          }
+          h3 {
+            font-size: size(24);
+            line-height: size(34);
+            color: #000;
+            font-weight: 500;
+          }
+          p {
+            color: #000;
+            font-size: size(16);
+            line-height: size(30);
+          }
+        }
+    }
+}

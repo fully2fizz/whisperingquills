@@ -50,13 +50,14 @@
 											<li><a href="#">About </a></li>
 											<li><a href="#">Services </a></li>
 											<li><a href="#">Works</a></li>
-											<li><a href="#" class="menudown">Blogs</a>
+											<li><a href="#" class="menudown">Resources</a>
 												<ul class="dropdown">
-													<li><a href="blog-single.html">Blog Details</a></li>
-                                                    <li><a href="404.html">Careers</a></li>
+													<li><a href="#">Careers</a></li>
+                                                    <li><a href="#">Careers</a></li>
 												</ul>
 											</li>
-											<li><a href="contact.html">Contact Us</a></li>
+											<li><a href="#">Blogs</a></li>
+											<li><a href="#">Contact Us</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -64,7 +65,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="#" class="btn btn-primary">Book Appointment</a>
+									<a href="#" class="btn btn-primary">Enquiry now</a>
 								</div>
 							</div>
 						</div>

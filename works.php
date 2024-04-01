@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="components/footer/footer.css">
 
     <link rel="stylesheet" href="components/sub-banner/sub-banner.css">
-    <link rel="stylesheet" href="components/service/projects-swiper.css">
+    <link rel="stylesheet" href="components/work/portfolio.css">
     
 
     <title>WhisperingQuills</title>
@@ -27,10 +27,10 @@
 
     
     <?php include('components/header/header.php');?>
-    <main class="service-page position-relative">
+    <main class="works-page position-relative">
 
     <?php include('components/sub-banner/sub-banner.php');?>    
-    <?php include('components/service/projects-swiper.php');?>
+    <?php include('components/work/portfolio.php');?>
 
 
         

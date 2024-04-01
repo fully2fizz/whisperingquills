@@ -120,13 +120,13 @@
 	position: relative;
 	&::after {
 		content: '';
-		width: 8px;
-		height: 13px;
+		width: 5px;
+		height: 9px;
 		background-image: url(../../assets/images/dropdown.svg);
 		background-repeat: no-repeat;
 		position: absolute;
-		top: 29px;
-		right: 0;
+		top: 32px;
+		right: -1px;
 		background-size: cover;
 		transform: rotate(90deg);
 	}
