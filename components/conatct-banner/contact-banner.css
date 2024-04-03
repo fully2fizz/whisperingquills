@@ -1,0 +1,186 @@
+/*==========================================*/
+/* 2 Contact form */
+/*==========================================*/
+#form-sec {
+  background-color: #000;
+  padding: 200px 0px 100px;
+}
+
+#form-sec h5 {
+  font-size: 20px;
+  font-weight: var(--font-weight-light);
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+#form-sec h3 {
+  font-size: 50px;
+  line-height: 80px;
+  font-weight: 300;
+  max-width: 450px;
+  margin-bottom: 80px;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+  #form-sec h3 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+#form-sec .form-subtitle {
+  margin-bottom: 80px;
+  color: #ffffff;
+  font-family: var(--headlines);
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+#form-sec form label {
+  margin-bottom: 50px;
+  display: block;
+}
+
+#form-sec form label span.form-control-wrap {
+  position: relative;
+}
+
+#form-sec form textarea {
+  height: 140px;
+  resize: none;
+  font-family: inherit;
+}
+
+#form-sec form input,
+#form-sec form textarea {
+  padding: 0 0 18px;
+  border: 0;
+  border-bottom: 1px solid #f1f1f1;
+  width: 100%;
+  font-size: 18px;
+  background: 0 0;
+  border-radius: 0;
+}
+
+#form-sec form input:focus,
+#form-sec form textarea:focus {
+  border-bottom: 1px solid #1f1f1f;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+  border: 1px solid grey;
+  color: grey;
+  display: block;
+  font-weight: 400;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus {
+  outline: 0;
+}
+
+#form-sec .list-item {
+  margin: 0 0 60px;
+}
+
+#form-sec .list-item input {
+  position: absolute;
+  opacity: 0;
+  z-index: 9;
+  margin-top: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+#form-sec form .list-item input {
+  cursor: pointer;
+}
+
+#form-sec form input + .list-item-label {
+  position: relative;
+  padding: 6px 0 0 45px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#form-sec form input + .list-item-label a {
+  text-decoration: underline;
+}
+
+#form-sec form input + .list-item-label:before {
+  content: "";
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 1px;
+  top: 11px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid grey;
+}
+
+#form-sec form input:checked + .list-item-label:before {
+  background: grey;
+}
+
+#form-sec form input:checked + .list-item-label:after {
+  content: "\f00c";
+  font: normal normal normal 14px/1 FontAwesome;
+  position: absolute;
+  display: inline-block;
+  color: #fff;
+  left: 4px;
+  top: 13px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#form-sec form .submit:disabled {
+  cursor: not-allowed;
+}
+
+#form-sec form .submit-btn {
+  background-color: #ffffff;
+  color: rgb(17, 17, 17);
+  padding: 14px 32px 15px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-family: var(--headlines);
+  line-height: initial;
+  text-transform: uppercase;
+  border: none;
+  display: inline-block;
+  font-weight: 400;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#form-sec form .submit:hover {
+  color: #eeff00;
+  background: rgb(71, 71, 71);
+  cursor: pointer;
+}
+
+#form-sec form .submit:hover:disabled {
+  color: #fff;
+  background: rgba(31, 31, 31, 0.5);
+}
+
+#form-sec form .submit:disabled {
+  cursor: not-allowed;
+}
+
+.wpcf7 form.failed .wpcf7-response-output, .wpcf7 form.aborted .wpcf7-response-output {
+  color: #fff;
+}

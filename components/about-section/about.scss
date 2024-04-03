@@ -45,18 +45,25 @@
       margin-bottom: size(24);
     }
 
-    .abt-section-cont {
-      font-size: size(28);
-      font-weight: 400;
-      line-height: 1.8;
-      color: #fff;
-      letter-spacing: - size(.2);
-      margin-bottom: size(30);
-
-      @include max(1199.98) {
-        font-size: size(22);
-        letter-spacing: - size(.16);
-        margin-bottom: size(20);
+    .text {
+      p {
+        background: linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(37, 37, 37) 50%);
+        background-size: 200% 100%;
+        background-position-x: 100%;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: size(28);
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: - size(.2);
+        margin-bottom: size(30);
+  
+        @include max(1199.98) {
+          font-size: size(22);
+          letter-spacing: - size(.16);
+          margin-bottom: size(20);
+        }
       }
     }
   }

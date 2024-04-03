@@ -63,7 +63,6 @@ if (window.matchMedia("(min-width: 992px)").matches) {
 
 
 
-
 // about section counting
 function countUp(element, label, endValue) {
     const currentCount = { value: 0 };
@@ -77,6 +76,47 @@ function countUp(element, label, endValue) {
         ease: "power3.out"
     });
 }
+
+
+
+// Gsap scroll animation
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".text p", {
+  backgroundPositionX: "0%",
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".text",
+    scrub: 1,
+    start: "top 80%",
+    end: "bottom 40%"
+  }
+});
+
+// sticky scroll animation
+const benefitsContainers = gsap.utils.toArray('.benefits-container');
+
+benefitsContainers.forEach((container, index) => {
+    gsap.to(container, {
+        scrollTrigger: {
+            trigger: "#services",
+            start: () => `top+=${index * window.innerHeight}`,
+            end: () => `+=${(index + 1) * window.innerHeight}`,
+            pin: true,
+            scrub: true,
+        }
+    });
+});
+
+var swiper = new Swiper(".stickySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 1500,
+      },
+  });
+
 
 gsap.utils.toArray('.count-wrapper').forEach((count) => {
     const countNo = count.querySelector(".count-text");

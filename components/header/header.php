@@ -34,7 +34,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.html"><img src="assets/images/logo.png" alt="#logo"></a>
+									<a href="index.php"><img src="assets/images/logo.png" alt="#logo"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -46,18 +46,18 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="#">Home</a></li>
-											<li><a href="#">About </a></li>
-											<li><a href="#">Services </a></li>
-											<li><a href="#">Works</a></li>
-											<li><a href="#" class="menudown">Resources</a>
+											<li class="active"><a href="index.php">Home</a></li>
+											<li><a href="about-page.php">About </a></li>
+											<li><a href="service.php">Services </a></li>
+											<li><a href="works.php">Works</a></li>
+											<li><a href="" class="menudown">Resources</a>
 												<ul class="dropdown">
 													<li><a href="#">Careers</a></li>
-                                                    <li><a href="#">Careers</a></li>
+                                                    <li><a href="#">Testimonial</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Blogs</a></li>
-											<li><a href="#">Contact Us</a></li>
+											<li><a href="blogs.php">Blogs</a></li>
+											<li><a href="contact.php">Contact</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -65,7 +65,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="#" class="btn btn-primary">Enquiry now</a>
+									<a href="tel:+919098979867" class="btn btn-primary">Enquiry now</a>
 								</div>
 							</div>
 						</div>

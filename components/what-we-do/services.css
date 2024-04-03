@@ -2,26 +2,30 @@
   height: 100svh;
   padding: 6.25rem 0;
   background-color: #000;
+  overflow: hidden;
 }
 @media screen and (max-width: 1199.98px) {
   .services {
     padding: 3.125rem 0;
   }
 }
+.services .benefits-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+}
 .services .service-wrap {
   width: 100%;
   margin: 0 auto;
   position: relative;
-}
-.services .service-wrap::after {
-  content: "";
-  width: 150px;
-  height: 150px;
-  background-image: url(../../assets/images/design-gif.gif);
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 .services .service-wrap h2 {
   font-size: 8.125rem;

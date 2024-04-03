@@ -28,7 +28,7 @@
             </figure>
           </div>
           <div class="wrap-cont">
-            <h3>UI&UX Design</h3>
+            <h3>Web App Development</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel totam necessitatibus eius, molestias illum,
               eligendi dignissimos.</p>
             <div class="view"><a href="#" class="fs-16 viewBtn">learn more</a></div>
@@ -45,7 +45,7 @@
             </figure>
           </div>
           <div class="wrap-cont">
-            <h3>UI&UX Design</h3>
+            <h3>E-Commerce</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel totam necessitatibus eius, molestias illum,
               eligendi dignissimos.</p>
             <div class="view"><a href="#" class="fs-16 viewBtn">learn more</a></div>
@@ -62,7 +62,7 @@
             </figure>
           </div>
           <div class="wrap-cont">
-            <h3>UI&UX Design</h3>
+            <h3>Mobile App Dev</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel totam necessitatibus eius, molestias illum,
               eligendi dignissimos.</p>
             <div class="view"><a href="#" class="fs-16 viewBtn">learn more</a></div>
@@ -79,7 +79,7 @@
             </figure>
           </div>
           <div class="wrap-cont">
-            <h3>UI&UX Design</h3>
+            <h3>Branding</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel totam necessitatibus eius, molestias illum,
               eligendi dignissimos.</p>
             <div class="view"><a href="#" class="fs-16 viewBtn">learn more</a></div>
@@ -96,7 +96,7 @@
             </figure>
           </div>
           <div class="wrap-cont">
-            <h3>UI&UX Design</h3>
+            <h3>Devops Consulting</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vel totam necessitatibus eius, molestias illum,
               eligendi dignissimos.</p>
             <div class="view"><a href="#" class="fs-16 viewBtn">learn more</a></div>

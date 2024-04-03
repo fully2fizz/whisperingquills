@@ -5,10 +5,12 @@
         <div class="col-lg-9 text-col d-flex align-items-center">
           <div class="text-wrapper">
             <div class="content">
-              <div class="abt-section-cont">
+              <div class=" text">
+                <p>
                 Established in 2000, DTALE Decor Pvt. Ltd. is one of India's foremost design-led, interior fit-out brands, 
                 with over 20 lakh sq. ft of luxury interior space executed for high-end hospitality  20 lakh sq. ft of luxury 
                 interior space executed.
+                </p>
               </div>
             </div>
             <div class="count-wrap d-flex align-items-start">

@@ -157,11 +157,6 @@
     <!-- Lazyload -->
     <script src="assets/js/vendors/lazyload-all.js" async=""></script>
     
-    <!-- tweenmax animation -->
-    <!-- <script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
-    <script type="text/javascript" src="assets/js/ScrollMagic.js"></script>
-    
-    <script type="text/javascript" src="assets/js/animation.js"></script> -->
 
     <script type="text/javascript" src="assets/js/vendors/lenis.min.js"></script>
     <script type="text/javascript" src="assets/js/vendors/animation.gsap.min.js"></script>
@@ -169,7 +164,6 @@
     <script type="text/javascript" src="assets/js/vendors/ScrollToPlugin.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script src="assets/js/vendors/swiper-bundle.min.js"></script> -->
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script>
         function loadJS(u) {

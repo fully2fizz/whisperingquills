@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="components/header/header.css">
     <link rel="stylesheet" href="components/footer/footer.css">
 
-    <link rel="stylesheet" href="components/sub-banner/sub-banner.css">
+    <link rel="stylesheet" href="components/conatct-banner/contact-banner.css">
     <link rel="stylesheet" href="components/insights/insight.css">
     
 
@@ -29,11 +29,7 @@
     <?php include('components/header/header.php');?>
     <main class="contact-page position-relative">
 
-    <?php include('components/sub-banner/sub-banner.php');?>    
-    <?php include('components/insights/insight.php');?>
-
-
-        
+    <?php include('components/conatct-banner/contact-banner.php');?>            
         
       </main>
       <?php include('components/footer/footer.php');?>
