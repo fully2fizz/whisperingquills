@@ -20,7 +20,7 @@
   background-color: #000000;
   border-bottom: 1px solid #1E1E1E;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .header .topbar {
     display: none;
   }
@@ -29,7 +29,7 @@
 .header .topbar .header-top-row {
   display: none;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1200px) {
   .header .topbar .header-top-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -52,6 +52,7 @@
 .header .top-link li {
   display: inline-block;
   margin-right: 15px;
+  color: #ffffff;
 }
 
 .header .top-link li:last-child {
@@ -85,6 +86,7 @@
 
 .header .top-contact li a {
   font-size: 14px;
+  color: #ffffff;
 }
 
 .header .top-contact li a:hover {
@@ -100,14 +102,38 @@
 .get-quote {
   margin-top: 10px;
 }
+@media screen and (max-width: 1200px) {
+  .get-quote {
+    display: none;
+  }
+}
 
 .get-quote .btn {
   color: #fff;
 }
 
+.row-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .header .logo {
   max-width: 220px;
   margin-top: 9px;
+}
+@media screen and (max-width: 1200px) {
+  .header .logo {
+    max-width: 150px;
+  }
 }
 
 .header .navbar {
@@ -118,6 +144,27 @@
   margin: 0;
   height: 0px;
   min-height: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .menu-col {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header .menu-col .main-menu {
+    display: none;
+  }
+}
+
+.header .menu-col .toogle-menu {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .header .menu-col .toogle-menu {
+    display: none;
+  }
 }
 
 .header .nav li {
@@ -310,3 +357,134 @@
 /*=========================
 	End Header CSS
 ===========================*/
+.al-btn {
+  display: inline;
+}
+.al-btn .btn_menu {
+  position: relative;
+  display: inline-block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background: 0 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0 !important;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  text-indent: inherit;
+  text-decoration: none;
+}
+
+.btn_menu {
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.btn_menu-box {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  width: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.btn_menu-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  left: -20px;
+  bottom: -20px;
+}
+.btn_menu-box span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 5px 0;
+  top: 0;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: #ffffff;
+  -webkit-transition: top 0.3s 0.3s, -webkit-transform 0.3s;
+  transition: top 0.3s 0.3s, -webkit-transform 0.3s;
+  transition: top 0.3s 0.3s, transform 0.3s;
+  transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+.btn_menu-box span.small {
+  position: relative;
+  display: block;
+  width: 70%;
+  height: 2px;
+  margin: 5px 0;
+  top: 0;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: #ffffff;
+  -webkit-transition: top 0.3s 0.3s, -webkit-transform 0.3s;
+  transition: top 0.3s 0.3s, -webkit-transform 0.3s;
+  transition: top 0.3s 0.3s, transform 0.3s;
+  transition: top 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.offcanvas {
+  background-color: #131313;
+}
+.offcanvas .offcanvas-header .click-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 10px 0;
+}
+.offcanvas .offcanvas-header .click-cont li {
+  list-style-type: none;
+}
+.offcanvas .offcanvas-header .click-cont li a {
+  color: #fff;
+}
+.offcanvas .offcanvas-header .btn-close {
+  width: 1em;
+  height: 1em;
+  background-image: url(../../assets/images/xmark-solid.svg);
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+.offcanvas .offcanvas-body .responsive-menu ul {
+  padding: 0;
+}
+.offcanvas .offcanvas-body .responsive-menu ul li {
+  list-style-type: none;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #4e4e4e;
+}
+.offcanvas .offcanvas-body .responsive-menu ul li a {
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+  text-decoration: none;
+}

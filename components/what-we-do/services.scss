@@ -15,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
 }
   .service-wrap {
     width: 100%;
@@ -31,6 +30,16 @@
         font-size: size(80);
         line-height: size(100);
         margin-bottom: 20px;
+      }
+      @include max(768) {
+        font-size: size(40);
+        line-height: size(50);
+        margin-bottom: 16px;
+      }
+      @include max(468) {
+        font-size: size(30);
+        line-height: size(42);
+        margin-bottom: 15px;
       }
     }
     p {

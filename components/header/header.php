@@ -8,7 +8,6 @@
 							<!-- Contact -->
 							<ul class="top-link">
 								<li><a href="#">About</a></li>
-								<li><a href="#">Doctors</a></li>
 								<li><a href="#">Contact</a></li>
 								<li><a href="#">FAQ</a></li>
 							</ul>
@@ -17,8 +16,8 @@
 						<div class="top-header-wrap">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+								<li><a href="tel:+880 1234 56789">+880 1234 56789</a></li>
+								<li><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
 							</ul>
 							<!-- End Top Contact -->
 						</div>
@@ -30,8 +29,8 @@
 			<div class="header-inner">
 				<div class="container">
 					<div class="inner">
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-12">
+						<div class="row-header">
+							<div class="logo-col">
 								<!-- Start Logo -->
 								<div class="logo">
 									<a href="index.php"><img src="assets/images/logo.png" alt="#logo"></a>
@@ -41,7 +40,7 @@
 								<div class="mobile-nav"></div>
 								<!-- End Mobile Nav -->
 							</div>
-							<div class="col-lg-7 col-md-9 col-12">
+							<div class="menu-col">
 								<!-- Main Menu -->
 								<div class="main-menu">
 									<nav class="navigation">
@@ -62,8 +61,41 @@
 									</nav>
 								</div>
 								<!--/ End Main Menu -->
+
+							<div class="toogle-menu">
+								<button class="al-btn btn_menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-label="menu" aria-controls="offcanvasRight">
+								<span class="btn_menu-box" style="transform: translate3d(0px, 0px, 0px);">
+									<span></span>
+									<span class="small"></span>
+									<span ></span>
+								</span>
+								</button>
+								<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+									<div class="offcanvas-header">
+										<div class="click-cont">
+											<li><a href="tel:+880 1234 56789">+880 1234 56789</a></li>
+											<li><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+										</div>
+										<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+										</button>
+									</div>
+									<div class="offcanvas-body">
+										<div class="responsive-menu">
+										<ul class="responive-ul">
+											<li><a href="index.php">Home</a></li>
+											<li><a href="about-page.php">About </a></li>
+											<li><a href="service.php">Services </a></li>
+											<li><a href="works.php">Works</a></li>
+											<li><a href="blogs.php">Blogs</a></li>
+											<li><a href="contact.php">Contact</a></li>
+										</ul>	
+										</div>
+									</div>
+									</div>
+								</div>
+
 							</div>
-							<div class="col-lg-2 col-12">
+							<div class="en-btn">
 								<div class="get-quote">
 									<a href="tel:+919098979867" class="btn btn-primary">Enquiry now</a>
 								</div>

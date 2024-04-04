@@ -20,7 +20,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2em;
 }
 .services .service-wrap {
   width: 100%;
@@ -39,6 +38,20 @@
     font-size: 5rem;
     line-height: 6.25rem;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services .service-wrap h2 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 468px) {
+  .services .service-wrap h2 {
+    font-size: 1.875rem;
+    line-height: 2.625rem;
+    margin-bottom: 15px;
   }
 }
 .services .service-wrap p {
