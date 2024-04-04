@@ -118,28 +118,10 @@ gsap.to(".text p", {
 });
 
 // sticky scroll animation
-const benefitsContainers = gsap.utils.toArray('.benefits-container');
 
-benefitsContainers.forEach((container, index) => {
-    gsap.to(container, {
-        scrollTrigger: {
-            trigger: "#services",
-            start: () => `top+=${index * window.innerHeight}`,
-            end: () => `+=${(index + 1) * window.innerHeight}`,
-            pin: true,
-            scrub: true,
-        }
-    });
-});
+// Hide controls
+document.getElementById('autoplay-video').controls = false;
 
-var swiper = new Swiper(".stickySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-        delay: 1500,
-      },
-  });
 
 
 gsap.utils.toArray('.count-wrapper').forEach((count) => {
@@ -188,3 +170,4 @@ var teamSwiper = new Swiper(".blog-swiper", {
         },
     },
 });
+
