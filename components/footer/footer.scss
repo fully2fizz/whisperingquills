@@ -126,6 +126,9 @@
       img {
         width: size(311.6);
         object-fit: contain;
+        @include max(991) {
+          width: size(200);
+        }
       }
     }
   }

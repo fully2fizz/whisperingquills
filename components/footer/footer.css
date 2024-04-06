@@ -121,6 +121,11 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 991px) {
+  .footer .logo > a img {
+    width: 12.5rem;
+  }
+}
 .footer .social ul {
   gap: 0.75rem;
 }
